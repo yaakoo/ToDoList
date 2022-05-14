@@ -1,0 +1,143 @@
+.body_color {
+  background-color: #d1d1d1;
+}
+
+
+/*ボタン*/
+.add-btn {
+margin: 0.5em;
+width: 33%;
+background-color: #ee695a;
+color: #fff;
+padding: 8px;
+border: 0;
+border-radius: 3px;
+box-shadow: 2px 2px 2px #828488;
+}
+
+
+.lo-btn{
+  padding: 0 8px;
+  font-size: 15px;
+  background: rgb(107, 154, 41);
+  color: white;
+  /*デフォルトのボーダーを消す*/
+  border: none;
+  border-radius: 3px;
+}
+
+/*ボタンここまで*/
+
+/*wrapper*/
+.wrapper{
+  height: 100%;
+  min-height: 100vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 120px;/*←headerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+
+/*header*/
+
+
+.parent {
+  background-color: #525252;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+.child1 {
+margin: auto 8px;
+text-align: center;
+}
+.child2 {
+  margin:auto 8px;
+  text-align: center;
+}
+
+/*footer*/
+
+footer{
+  width: 100%;
+  padding: 30px 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.parent_f {
+  background-color: #525252;
+  height: 80px;
+  margin-top: 60px;
+  color: #FFF;
+  text-align: center;
+  font-size: 13px;
+  bottom: 0;
+}
+
+
+
+
+.error {
+  color: #F33;
+}
+
+
+.to {
+color: rgb(189, 246, 75);
+}
+.do {
+color:rgb(255, 240, 144)
+}
+.list {
+color:rgb(255, 178, 178)
+}
+
+
+.add_list {
+margin: 8px;
+background-color: #fff;
+padding: 16px;
+border: 2px solid #949494}
+
+
+.list-1 {
+margin: 8px;
+background-color: rgb(255, 151, 151);
+padding: 16px;
+border: 2px solid #ff7070;
+}
+
+.list-2 {
+margin: 8px;
+background-color: rgb(255, 239, 230);
+padding: 16px;
+border: 2px solid rgb(250, 216, 188);
+}
+
+.list-3 {
+margin: 8px;
+background-color: rgb(255, 255, 227);
+padding: 16px;
+border: 2px solid #ffee80;
+}
+
+.list-4 {
+margin: 8px;
+background-color: #efffd5;
+padding: 16px;
+border: 2px solid rgb(199, 239, 152);
+}
+
+.list-5 {
+margin: 8px;
+background-color: #e7ffe2;
+padding: 16px;
+border: 2px solid rgb(161, 242, 150);
+}
+
+/* スマホ用 
+@media only screen and (max-width:600px){
+  
+}
+*/
