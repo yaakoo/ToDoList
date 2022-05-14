@@ -175,12 +175,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php endwhile; ?>
         <?php
         $stmt2 = $db->prepare('select 
-        count(priority), 
-        COUNT(priority=1 or null),
-        COUNT(priority=2 or null),
-        COUNT(priority=3 or null),
-        COUNT(priority=4 or null),
-        COUNT(priority=5 or null)
+        count(priority) as ap, 
+        COUNT(priority=1 or null) as p1,
+        COUNT(priority=2 or null) as p2, 
+        COUNT(priority=3 or null) as p3,
+        COUNT(priority=4 or null) as p4,
+        COUNT(priority=5 or null) as p5
         FROM lists where member_id in (?);');
         if (!$stmt2){
         die($db->error);
@@ -194,7 +194,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $stmt2->bind_result($ap, $p1, $p2, $p3, $p4, $p5);
 
-        $stmt2->$columnCount();
+        $stmt2->fetch();
 
         echo  var_dump($ap, $p1, $p2, $p3, $p4, $p5);
         ?>
