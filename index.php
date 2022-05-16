@@ -83,6 +83,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </header>
 
     <div class="container">
+        <script>
+            var today = new Date();
+            document.write('<p>' + today.getDate() + '<p>');
+
+
+        </script>
+    </div>
+
+    <div class="container">
         
         <hr>
 

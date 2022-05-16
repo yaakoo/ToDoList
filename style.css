@@ -103,16 +103,16 @@ border: 2px solid #949494}
 
 .list-1 {
 margin: 8px;
-background-color: rgb(255, 151, 151);
+background-color: rgb(255, 184, 184);
 padding: 16px;
-border: 2px solid #ff7070;
+border: 2px solid #ff8e8e;
 }
 
 .list-2 {
 margin: 8px;
-background-color: rgb(255, 239, 230);
+background-color: rgb(255, 227, 210);
 padding: 16px;
-border: 2px solid rgb(250, 216, 188);
+border: 2px solid rgb(255, 204, 162);
 }
 
 .list-3 {
