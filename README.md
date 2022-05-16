@@ -1,2 +1,2 @@
 # ToDoList
-Herokuと連携
+PHPで作成したToDoListをHerokuにデプロイして公開
