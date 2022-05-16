@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('/MAMP/ToDoList/todolist/tdlibrary.php');
+require('../tdlibrary.php');
 
 if (isset($_GET['action']) && $_GET['action'] === 'rewrite' && isset($_SESSION['form'])) {
     $form = $_SESSION['form'];
@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
                 integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/todolist/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>ToDoList 新規登録</title>
 </head>
 
@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <p>ユーザー登録をお願いします</p>
             </div>
             <div class="form-check form-check-inline">
-                <a href="/todolist/login.php">すでに登録されている方はこちら</a>    
+                <a href="../login.php">すでに登録されている方はこちら</a>    
             </div>
             <div class="add_list">
                 <form action="" method="post">

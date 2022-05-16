@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
                 integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/todolist/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>ToDoList ログイン</title>
 </head>
 <body class="body_color">
@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
                 <p>認証をお願いします</p>
             </div>
             <div class="form-check form-check-inline">
-                <a href="/todolist/join/index.php">登録がまだの方はこちら</a>    
+                <a href="join/index.php">登録がまだの方はこちら</a>    
             </div>
             <div class="add_list">
                 <form action="" method="post">

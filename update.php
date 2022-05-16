@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $priority = filter_input(INPUT_POST, 'priority', FILTER_SANITIZE_NUMBER_INT);
             $message = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING);
 
-            $stmt = $db->prepare('update lists set message=?, priority=? where id=?');
+            $stmt = $db->prepare('UPDATE lists SET message=?, priority=? WHERE id=?');
             if (!$stmt) {
                 die($db->error);
             }
@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
                 integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/todolist/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <title>ToDoList <?php echo h($name); ?>さんのリスト</title>
 </head>

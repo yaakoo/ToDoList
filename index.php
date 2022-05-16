@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
                 integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/todolist/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>ToDoList <?php echo h($name); ?>さんのリスト</title>
 </head>
 <body class="body_color">
@@ -81,15 +81,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div>
             
         </header>
-
-    <div class="container">
-        <script>
-            var today = new Date();
-            document.write('<p>' + today.getDate() + '<p>');
-
-
-        </script>
-    </div>
 
     <div class="container">
         
@@ -207,6 +198,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         echo  var_dump($ap, $p1, $p2, $p3, $p4, $p5);
         ?>
+    </div>
+
+    <div>
+        <script>
+            var today = new Date();
+            document.write('<p>' + today.getDate() + '日<p>');
+
+
+        </script>
     </div>
 
     <footer class="parent_f">

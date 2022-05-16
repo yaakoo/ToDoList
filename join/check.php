@@ -1,6 +1,6 @@
 <?php
 session_start();
-require('/MAMP/ToDoList/todolist/tdlibrary.php');
+require('../tdlibrary.php');
 
 if (isset($_SESSION['form'])) {
 	$form = $_SESSION['form'];
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
                 integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/todolist/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 	<title>ToDoList 登録確認</title>
 
 </head>
